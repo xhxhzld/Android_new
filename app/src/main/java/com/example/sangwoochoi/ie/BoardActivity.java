@@ -10,18 +10,19 @@ import android.widget.ListView;
 
 
 import java.util.ArrayList;
-
+import android.os.*;
 
 public class BoardActivity extends Activity {
     ArrayAdapter<String> arrayAdapter;
     final ArrayList<String> list = new ArrayList<String>();
 
     public void onCreate(Bundle savedInstanceState) {
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board);
-        String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
-                "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
-                "Linux", "OS/2" };
+        String[] values = parsing.Dupli_Sort(parsing.SNUparsing());
 
 
         for (int i = 0; i < values.length; ++i) {
