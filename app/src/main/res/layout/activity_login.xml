@@ -41,8 +41,9 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/button"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="60dp"
         android:layout_below="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
         android:layout_alignEnd="@+id/editText2" />
 
     <Button
@@ -51,6 +52,7 @@
         android:text="Sign up"
         android:id="@+id/button2"
         android:layout_alignTop="@+id/button"
-        android:layout_alignStart="@+id/editText2" />
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView" />
 
 </RelativeLayout>

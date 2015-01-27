@@ -13,11 +13,8 @@ import java.util.ArrayList;
 
 
 public class BoardActivity extends Activity {
-
-
-
     ArrayAdapter<String> arrayAdapter;
-
+    final ArrayList<String> list = new ArrayList<String>();
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,12 +22,13 @@ public class BoardActivity extends Activity {
         String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
                 "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
                 "Linux", "OS/2" };
-        final ArrayList<String> list = new ArrayList<String>();
+
+
         for (int i = 0; i < values.length; ++i) {
             list.add(values[i]);
         }
 
-        ListView listview= (ListView)findViewById(R.id.listView);
+        ListView listview= (ListView)findViewById(R.id.listView2);
         arrayAdapter = new ArrayAdapter<String>(getBaseContext(),android.R.layout.simple_list_item_1,list);
         listview.setAdapter(arrayAdapter);
 

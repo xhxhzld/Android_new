@@ -13,13 +13,13 @@ import android.widget.Button;
 public class LoginActivity extends ActionBarActivity {
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);   //레이아웃과 연결하는 부분
         setContentView(R.layout.activity_main);
         Log.i("IE","OnCreate");
 
-        Button loginACT = (Button)findViewById(R.id.button);
-        loginACT .setOnClickListener(new View.OnClickListener(){
+        Button loginACT = (Button)findViewById(R.id.button4);
+        loginACT.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),BoardActivity.class));
@@ -33,7 +33,16 @@ public class LoginActivity extends ActionBarActivity {
            // }
        // });
 
-};
+        Button finishActivity= (Button)findViewById(R.id.button5);
+        finishActivity.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
+}
 
 
 
