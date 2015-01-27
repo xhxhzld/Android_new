@@ -13,10 +13,9 @@ import java.util.ArrayList;
 
 
 public class BoardActivity extends Activity {
-    public String[] nameList;
-    public String[] phoneList;
 
-    ArrayList<String> list;
+
+
     ArrayAdapter<String> arrayAdapter;
 
 
