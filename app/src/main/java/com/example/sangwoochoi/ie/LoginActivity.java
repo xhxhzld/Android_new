@@ -49,30 +49,30 @@ public class LoginActivity extends ActionBarActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.i("YJ","OnStart");
+        Log.i("KJ","OnStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i("YJ","OnResume");
+        Log.i("KJ","OnResume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.i("YJ","OnPause");
+        Log.i("KJ","OnPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.i("YJ","OnStop");
+        Log.i("KJ","OnStop");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.i("YJ","OnDestroy");
+        Log.i("KJ","OnDestroy");
     }
 }

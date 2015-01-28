@@ -44,7 +44,7 @@ public class parsing {
         }
         String[] parsingText = new String[date_text.split("\\?").length-1];
         for(int i=1;i<date_text.split("\\?").length;i++){
-            parsingText[i-1] = date_text.split("\\?")[i]+", "+context.split("\\?")[i];
+            parsingText[i-1] = date_text.split("\\?")[i]+"\n"+context.split("\\?")[i];
         }
         return parsingText;
     }
@@ -67,18 +67,18 @@ public class parsing {
 
 
 
-    public static void selection(String[] parsing, String[] ID){
-        for(int i=3;i<ID.length;i++){
-            if(!ID[i].equals("null")){
-                System.out.println("\n"+ID[i]+" 관련 공지입니다.\n");
+    public static ArrayList<String> selection(String[] parsing, String search, String search_sec){
+        ArrayList<String> selected = new ArrayList<String>();
+
                 for(int k=0;k<parsing.length-1;k++){
-                    if(parsing[k].contains(ID[i])){
-                        System.out.println(parsing[k]);
+                    if(parsing[k].contains(search)||parsing[k].contains(search_sec)){
+                        selected.add(parsing[k]);
                     }
                 }
+        return selected;
             }
         }
 
-    }
 
-}
+
+
