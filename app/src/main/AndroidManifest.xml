@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sangwoochoi.ie" >
 
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -10,13 +9,14 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".LoginActivity"
-            android:label="@string/app_name" >
+            android:label="I.E" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
         <activity
             android:name=".BoardActivity"
@@ -28,6 +28,19 @@
             android:name=".Board_content"
             android:label="Board_content" >
         </activity>
+
+        <activity
+
+            android:name=".GraduateActivity"
+            android:label="GraduateActivity">
+            </activity>
+        <activity
+
+            android:name=".GraduateActivity2"
+            android:label="GraduateActivity2">
+        </activity>
+
+
     </application>
 
 <uses-permission android:name="android.permission.INTERNET" />

@@ -25,6 +25,16 @@ public class LoginActivity extends ActionBarActivity {
                 startActivity(new Intent(getApplicationContext(),BoardActivity.class));
             }
         });
+
+        Button graduateACT = (Button)findViewById(R.id.button6);
+        graduateACT.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), GraduateActivity.class));
+            }
+        });
+
+
        // Button signACT = (Button)findViewById(R.id.button2);
        // signACT.setOnClickListener(new View.OnClickListener(){
          //   @Override
