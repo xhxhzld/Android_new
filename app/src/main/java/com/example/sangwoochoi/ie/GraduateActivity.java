@@ -43,7 +43,7 @@ public class GraduateActivity extends Activity implements View.OnClickListener {
             }
 
         }
-        
+
         else{
             intent = new Intent(GraduateActivity.this, GraduateActivity2.class);
             intent.putExtra("name", text.getText().toString());

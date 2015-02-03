@@ -10,17 +10,29 @@
         android:text="졸업시뮬레이션"
         android:id="@+id/textView6"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="45dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <ListView
+    <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView2"
-        android:layout_alignRight="@+id/textView6"
-        android:layout_alignEnd="@+id/textView6"
-        android:choiceMode="multipleChoice"
-        android:layout_below="@+id/textView6" />
+        android:text="전공"
+        android:id="@+id/button11"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView6"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="교양"
+        android:id="@+id/button12"
+        android:layout_alignTop="@+id/button11"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
 
 </RelativeLayout>

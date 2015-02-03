@@ -25,8 +25,6 @@ public class StudentIDList {
         this.studentIDList.add("2013");
         this.studentIDList.add("14");
         this.studentIDList.add("2014");
-        this.studentIDList.add("15");
-        this.studentIDList.add("2015");
     }
 
     public boolean isContained(String text){
