@@ -34,6 +34,14 @@ public class LoginActivity extends ActionBarActivity {
             }
         });
 
+        Button freeboardACT = (Button)findViewById(R.id.button5);
+        freeboardACT.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), FreeBoardActivity.class));
+            }
+        });
+
 
        // Button signACT = (Button)findViewById(R.id.button2);
        // signACT.setOnClickListener(new View.OnClickListener(){
@@ -43,13 +51,7 @@ public class LoginActivity extends ActionBarActivity {
            // }
        // });
 
-        Button finishActivity= (Button)findViewById(R.id.button5);
-        finishActivity.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
 
 
 }

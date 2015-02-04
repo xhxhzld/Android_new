@@ -41,6 +41,15 @@
         </activity>
 
 
+
+        <activity
+            android:name=".FreeBoardActivity"
+            android:label="FreeBoardActivity" >
+
+        </activity>
+
+
+
     </application>
 
 <uses-permission android:name="android.permission.INTERNET" />
