@@ -8,41 +8,54 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 
 
-public class LoginActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);   //레이아웃과 연결하는 부분
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_main);
+        Log.i("IE","OnCreate");
+        Intent intent = getIntent();
+        final String IDname = intent.getStringExtra("ID");
 
-         final EditText IDname = (EditText)findViewById(R.id.editText);
+        TextView appname = (TextView)findViewById(R.id.textView4);
+        appname.setText("I.E app for "+IDname +"♥");
 
-
-        Button loginACT = (Button)findViewById(R.id.button);
+        Button loginACT = (Button)findViewById(R.id.button4);
         loginACT.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String ID = IDname.getText().toString();
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                intent.putExtra("ID", ID);
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(),BoardActivity.class));
             }
         });
 
-        Button signupACT = (Button)findViewById(R.id.button2);
-        signupACT.setOnClickListener(new View.OnClickListener(){
+        Button graduateACT = (Button)findViewById(R.id.button6);
+        graduateACT.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SignupActivity.class));
+                startActivity(new Intent(getApplicationContext(), GraduateActivity.class));
+            }
+        });
+
+        Button freeboardACT = (Button)findViewById(R.id.button5);
+        freeboardACT.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent idintent = new Intent(MainActivity.this, FreeBoardActivity.class);
+                idintent.putExtra("ID", IDname);
+                startActivity(idintent);
             }
         });
 
 
 
-    }
+
+
+
+}
 
 
 
