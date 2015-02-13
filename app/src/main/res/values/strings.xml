@@ -4,5 +4,6 @@
     <string name="app_name">I.E</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="fragment_item_list">fragment_item</string>
 
 </resources>

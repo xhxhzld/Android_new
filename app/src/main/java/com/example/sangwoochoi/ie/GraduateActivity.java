@@ -46,7 +46,7 @@ public class GraduateActivity extends Activity implements View.OnClickListener {
 
         else{
             intent = new Intent(GraduateActivity.this, GraduateActivity2.class);
-            intent.putExtra("name", text.getText().toString());
+            intent.putExtra("studentID", text.getText().toString());
             startActivity(intent);
             finish();
         }
