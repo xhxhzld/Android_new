@@ -62,6 +62,7 @@ public class BoardActivity extends Activity  {
 
             }
         });
+
         Button secpostACT = (Button) findViewById(R.id.button9);
         secpostACT.setOnClickListener(new View.OnClickListener() {
             @Override

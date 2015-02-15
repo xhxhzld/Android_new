@@ -49,6 +49,24 @@
         android:id="@+id/listView3"
         android:layout_below="@+id/button11"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button14" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:id="@+id/button14"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="들은 과목들을 체크해주세요."
+        android:id="@+id/textView9"
+        android:layout_above="@+id/button12"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
